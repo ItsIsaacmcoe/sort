@@ -4,12 +4,12 @@ public class SelectionSort
     public static void selectionSort(int[] arr)
     {
         //outer loop controlling the index position
-        for (int i = 0; i < arr.length - 1; i++)
+        for (int index_position = 0; index_position < arr.length - 1; index_position++)
         {
             //tying index to outer loop
-            int index = i;
+            int index = index_position;
             //loop ranking current index against current min
-            for (int j = i + 1; j < arr.length; j++)
+            for (int j = index_position + 1; j < arr.length; j++)
             {
                 if (arr[j] < arr[index])
                 {
@@ -19,8 +19,8 @@ public class SelectionSort
             }
             int smallerNumber = arr[index];
             //sorting index into lowest available position
-            arr[index] = arr[i];
-            arr[i] = smallerNumber;
+            arr[index] = arr[index_position];
+            arr[index_position] = smallerNumber;
         }
     }
 }
