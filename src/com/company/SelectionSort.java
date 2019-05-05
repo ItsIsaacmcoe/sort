@@ -11,6 +11,7 @@ public class SelectionSort
             //loop ranking current index against current min
             for (int ordinal = index_position + 1; ordinal < arr.length; ordinal++)
             {
+                //TODO: understand this in your head
                 if (arr[ordinal] < arr[index])
                 //START
                 {
