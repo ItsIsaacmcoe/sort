@@ -12,6 +12,7 @@ public class SelectionSort
             for (int ordinal = index_position + 1; ordinal < arr.length; ordinal++)
             {
                 if (arr[ordinal] < arr[index])
+                //START
                 {
                     //new min
                     index = ordinal;
