@@ -9,12 +9,12 @@ public class SelectionSort
             //tying index to outer loop
             int index = i;
             //loop ranking current index against current min
-            for (int j = i + 1; j < arr.length; j++)
+            for (int ordinal = i + 1; ordinal < arr.length; ordinal++)
             {
-                if (arr[j] < arr[index])
+                if (arr[ordinal] < arr[index])
                 {
                     //new min
-                    index = j;
+                    index = ordinal;
                 }
             }
             int smallerNumber = arr[index];
